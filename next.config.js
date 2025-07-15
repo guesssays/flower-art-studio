@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-         // Собирает полностью статический сайт в папку out
+  output: 'export',        // Собирает полностью статический сайт в папку out
   distDir: 'out',          // Куда складывать собранный сайт (Netlify любит out/)
   trailingSlash: true,     // Все пути будут с / на конце (пример: /gallery/)
   images: {
