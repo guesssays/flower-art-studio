@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GOODVEEN - Premium Floral Artistry',
+  title: 'SPremium Floral Artistry',
   description: 'Create beautiful floral arrangements with our premium design services. From weddings to special occasions, we bring nature\'s beauty to your doorstep.',
 }
 

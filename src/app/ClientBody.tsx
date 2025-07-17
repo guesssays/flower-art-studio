@@ -21,11 +21,11 @@ export default function ClientBody({
             {/* Logo & Brand */}
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="w-10 h-10 bg-gradient-accent rounded-none flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <span className="text-white font-display font-bold text-lg">G</span>
+                <span className="text-white font-display font-bold text-lg">N</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-lg font-semibold text-primary leading-none md:text-2xl">
-                  GOODVEEN
+                  Your Logo
                 </span>
                 <span className="text-caption text-neutral-600 leading-none text-xs md:text-sm">
                   Flower House
@@ -147,11 +147,11 @@ export default function ClientBody({
       <div className="lg:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
         <div className="flex items-center space-x-3 mb-6 justify-center md:justify-start">
           <div className="w-12 h-12 bg-gradient-accent flex items-center justify-center">
-            <span className="text-primary font-display font-bold text-xl">G</span>
+            <span className="text-primary font-display font-bold text-xl">N</span>
           </div>
           <div>
             <h3 className="font-display text-xl font-semibold text-primary sm:text-2xl">
-              GOODVEEN Flower House
+             Your Logo
             </h3>
             <p className="text-caption text-white/80">Цветочное искусство</p>
           </div>
@@ -187,14 +187,14 @@ export default function ClientBody({
         <div className="space-y-3 text-white/90">
           <p>123 Цветочная улица<br />Ташкент, Узбекистан</p>
           <p>+998 (90) 123-45-67</p>
-          <p>hello@goodveen.uz</p>
+          <p>hello@flower.uz</p>
         </div>
       </div>
     </div>
 
     <div className="border-t border-white/30 mt-10 pt-6 flex flex-col gap-4 md:flex-row md:gap-0 md:justify-between items-center text-center">
       <p className="text-white/70 text-xs sm:text-sm">
-        © 2024 GOODVEEN Flower House. Все права защищены.
+        © 2024 Flower House. Все права защищены.
       </p>
       <div className="flex flex-col gap-2 md:flex-row md:space-x-6">
         <a href="#" className="text-white/70 hover:text-accent text-xs sm:text-sm transition-colors duration-300">

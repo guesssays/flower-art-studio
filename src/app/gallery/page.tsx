@@ -104,7 +104,7 @@ export default function GalleryPage() {
               Виртуальная галерея
             </p>
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight font-display text-primary mb-2 drop-shadow-lg">
-              GOODVEEN Gallery
+              Flowers Gallery
             </h1>
             <div className="flex justify-center mb-8">
               <span className="block text-xl md:text-2xl lg:text-3xl text-neutral-500 font-light tracking-widest">
@@ -112,7 +112,7 @@ export default function GalleryPage() {
               </span>
             </div>
             <p className="text-xl md:text-2xl text-neutral-700 mb-4 font-light max-w-3xl mx-auto">
-              Премиальные композиции для вашего настроения, созданные лучшими флористами GOODVEEN.
+              Премиальные композиции для вашего настроения, созданные лучшими флористами.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4">
               <Link href="/design" className="btn-primary">
@@ -172,7 +172,7 @@ export default function GalleryPage() {
               Закажите идеальный букет в 1 клик!
             </h2>
             <p className="text-body-lg mb-12 text-neutral-200">
-              Напишите нам или создайте уникальный дизайн — флорист GOODVEEN подберёт лучшие свежие цветы и оформление для любого случая.
+              Напишите нам или создайте уникальный дизайн — флорист подберёт лучшие свежие цветы и оформление для любого случая.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link href="/design" className="btn-accent">

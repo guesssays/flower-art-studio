@@ -150,76 +150,75 @@ const services = [
         </div>
       </section>
 
-      {/* Раздел услуг */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20 animate-on-scroll">
-            <h2 className="text-headline text-primary mb-6">
-              Наши услуги по дизайну
-            </h2>
-            <p className="text-body-lg text-neutral-600 max-w-3xl mx-auto">
-              Выберите из полного спектра наших флористических услуг, каждая из которых создаёт незабываемые впечатления.
-            </p>
-          </div>
+     {/* Раздел услуг */}
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="text-center mb-20 animate-on-scroll">
+      <h2 className="text-headline text-primary mb-6">
+        Наши услуги по дизайну
+      </h2>
+      <p className="text-body-lg text-neutral-600 max-w-3xl mx-auto">
+        Выберите из полного спектра наших флористических услуг, каждая из которых создаёт незабываемые впечатления.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service) => (
-              <AnimatedCard key={service.id} className="relative">
-                <div
-                  className={`card-premium cursor-pointer ${
-                    selectedService === service.id ? 'ring-2 ring-accent' : ''
-                  }`}
-                  onClick={() => setSelectedService(service.id)}
-                >
-                  {service.recommended && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-accent text-primary text-xs font-semibold px-3 py-1 uppercase tracking-wide">
-                        Популярно
-                      </span>
-                    </div>
-                  )}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {services.map((service) => (
+        <div key={service.id} className="flex flex-col items-center">
+          {/* Бейдж "Популярно" над карточкой */}
+          {service.recommended && (
+            <div className="mb-2">
+              <span className="bg-accent text-primary text-xs font-semibold px-3 py-1 rounded-md uppercase tracking-wide shadow-md">
+                Популярно
+              </span>
+            </div>
+          )}
+          <AnimatedCard className="w-full">
+            <div
+              className={`card-premium cursor-pointer ${selectedService === service.id ? 'ring-2 ring-accent' : ''}`}
+              onClick={() => setSelectedService(service.id)}
+            >
+              <div className="p-8">
+                <h3 className="text-xl font-display font-semibold text-primary mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  {service.description}
+                </p>
 
-                  <div className="p-8">
-                    <h3 className="text-xl font-display font-semibold text-primary mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-neutral-600 mb-6">
-                      {service.description}
-                    </p>
-
-                    <div className="mb-6">
-                      <div className="text-2xl font-display font-bold text-accent mb-2">
-                        {service.price}
-                      </div>
-                      <div className="text-sm text-neutral-500">
-                        {service.duration}
-                      </div>
-                    </div>
-
-                    <ul className="space-y-3 mb-8">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start text-sm">
-                          <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 mr-3 flex-shrink-0" />
-                          <span className="text-neutral-600">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link
-                      href="/contact"
-                      className={`w-full justify-center ${
-                        service.recommended ? 'btn-accent' : 'btn-secondary'
-                      }`}
-                    >
-                      Узнать больше
-                    </Link>
+                <div className="mb-6">
+                  <div className="text-2xl font-display font-bold text-accent mb-2">
+                    {service.price}
+                  </div>
+                  <div className="text-sm text-neutral-500">
+                    {service.duration}
                   </div>
                 </div>
-              </AnimatedCard>
-            ))}
-          </div>
+
+                <ul className="space-y-3 mb-8">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 mr-3 flex-shrink-0" />
+                      <span className="text-neutral-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href="/contact"
+                  className={`w-full justify-center ${service.recommended ? 'btn-accent' : 'btn-secondary'}`}
+                >
+                  Узнать больше
+                </Link>
+              </div>
+            </div>
+          </AnimatedCard>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Стили дизайна */}
       <section className="py-24 bg-gradient-hero">

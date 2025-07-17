@@ -36,7 +36,7 @@ export default function Home() {
               Премиальная флористика
             </p>
             <h1 className="text-hero text-primary mb-2 font-extrabold tracking-tight">
-              GOODVEEN
+              *Name of your business*
             </h1>
             <div className="flex justify-center mb-8">
               <span className="block text-2xl md:text-3xl lg:text-4xl text-neutral-500 font-light tracking-widest">
